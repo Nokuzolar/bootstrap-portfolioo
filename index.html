@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bootstrap Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f5f7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4b3045, #bd7299);
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: #9c547a;
+            font-weight: bold;
+        }
+
+        .project-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .project-card .card-body {
+            padding: 25px;
+        }
+
+        .btn-pink {
+            background-color: #bd7299;
+            color: white;
+            border: none;
+        }
+
+        .btn-pink:hover {
+            background-color: #9c547a;
+            color: white;
+        }
+
+        footer {
+            background-color: #302631;
+            color: white;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BOOTSTRAP NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark"
+         style="background-color: #302631;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#portfolioNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="portfolioNavbar">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero text-center" id="home">
+        <div class="container">
+            <h1>Hello, I'm Nokuzola!</h1>
+            <p class="lead">Aspiring Full Stack Web Developer</p>
+            <p>Welcome to my personal portfolio website.</p>
+            <a href="#projects" class="btn btn-light btn-lg mt-3">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="py-5" id="about">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">About Me</h2>
+
+            <div class="row align-items-center">
+                <div class="col-md-8 mx-auto text-center">
+                    <p>
+                        I am a passionate aspiring web developer currently
+                        learning HTML, CSS, JavaScript, Bootstrap and React.
+                        I enjoy creating websites, solving problems and
+                        developing my technical skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="py-5 bg-white" id="projects">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">My Projects</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML Website</h5>
+                            <p class="card-text">
+                                A website created using HTML and CSS
+                                to practise web development fundamentals.
+                            </p>
+                            <a href="#" class="btn btn-pink">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap Portfolio</h5>
+                            <p class="card-text">
+                                A responsive portfolio website built
+                                using Bootstrap grid and components.
+                            </p>
+                            <a href="#" class="btn btn-pink">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript Projects</h5>
+                            <p class="card-text">
+                                Interactive projects created while
+                                learning JavaScript programming.
+                            </p>
+                            <a href="#" class="btn btn-pink">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-5 text-center" id="contact">
+        <div class="container">
+            <h2 class="section-title mb-3">Contact Me</h2>
+            <p>Thank you for visiting my portfolio!</p>
+            <a href="mailto:hello@example.com" class="btn btn-pink">
+                Send Me an Email
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <p class="mb-0">
+            &copy; 2026 Nokuzola | My Bootstrap Portfolio
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
